@@ -140,6 +140,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     justify-content: last baseline;
+    max-width: 100%;
 }
 
 #data {

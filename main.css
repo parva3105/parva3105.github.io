@@ -30,6 +30,12 @@ body{
     }
 }
 
+@media screen and(max-widht :400px) {
+    .left , .main , .right {
+        width: 100%;
+    }
+}
+
 .glass-morphed-2 {
     font-family: 'Inconsolata';
     color: #D9CAB3;
@@ -110,11 +116,15 @@ ul li:before{
    transform: translateY(-50%) rotate(-45deg);
 }
 
+.inplace {
+    max-width: 100%;
+}
+
 .papers {
     display: flex;
     justify-content: space-evenly;
-    
 }
+
 
 #big-text-adjust {
     font-size: 48px;

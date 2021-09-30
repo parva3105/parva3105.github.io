@@ -118,9 +118,6 @@ ul li:before{
 
 #big-text-adjust {
     font-size: 48px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 

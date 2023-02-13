@@ -41,7 +41,7 @@ header{
 /*          IMG             */
 
 .me{
-    background: linear-gradient(var(--color-primary),transparent);
+    background: linear-gradient(45deg ,var(--color-primary),transparent);
     width: 22rem;
     height: 50rem;
     position: absolute;

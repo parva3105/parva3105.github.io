@@ -1,11 +1,15 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../Assets/portfolio1.jpg'
-import IMG2 from '../../Assets/portfolio2.jpg'
-import IMG3 from '../../Assets/portfolio3.jpg'
-import IMG4 from '../../Assets/portfolio4.jpg'
-import IMG5 from '../../Assets/portfolio5.png'
-import IMG6 from '../../Assets/portfolio6.jpg'
+import IMG1 from '../../Assets/api.png'
+import IMG2 from '../../Assets/blogapp.png'
+import IMG3 from '../../Assets/car price.jpeg'
+import IMG4 from '../../Assets/catordog.jpeg'
+import IMG5 from '../../Assets/School Tracker.png'
+import IMG6 from '../../Assets/ToDo React.png'
+import IMG7 from '../../Assets/WeatherImg.png'
+
+
+
 
 const Portfolio = () => {
   return (
@@ -14,7 +18,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        <article className="portfolio__item">
+        {/* <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG1} alt="" />
           </div>
@@ -23,37 +27,82 @@ const Portfolio = () => {
           <a href="#" className='btn'>Github</a>
           <a href="#"className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
+        </article> */}
+
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG7} alt="" />
+          </div>
+          <h3>Weather App using NodeJs</h3>
+          <div className="portfolio__item-cta">
+          <a href="https://github.com/parva3105/weather-app" className='btn'>Github</a>
+          {/* <a href="#"className='btn btn-primary' target='_blank'>Live Demo</a> */}
+          </div>
         </article>
+
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG6} alt="" />
+          </div>
+          <h3>Todo's App in React</h3>
+          <div className="portfolio__item-cta">
+          <a href="https://github.com/parva3105/todos-react" className='btn'>Github</a>
+          <a href="https://todos-react-mtsn6tq95-parva3105.vercel.app/"className='btn btn-primary' target='_blank'>Live Demo</a>
+          </div>
+        </article>
+
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG1} alt="" />
           </div>
-          <h3>This is a Portfolio Item Title</h3>
+          <h3>Task Managing API using NodeJs</h3>
           <div className="portfolio__item-cta">
-          <a href="#" className='btn'>Github</a>
-          <a href="#"className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/parva3105/task-manager" className='btn'>Github</a>
           </div>
         </article>
+
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
+            <img src={IMG2} alt="" />
           </div>
-          <h3>This is a Portfolio Item Title</h3>
+          <h3>Blog App in Django</h3>
+          <div className="portfolio__item-cta">
+          <a href="https://github.com/parva3105/blog-app" className='btn'>Github</a>
+          </div>
+        </article>
+
+        {/* <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG5} alt="" />
+          </div>
+          <h3>School Tracker in Django</h3>
           <div className="portfolio__item-cta">
           <a href="#" className='btn'>Github</a>
           <a href="#"className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
-        </article>
+        </article> */}
+
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
+            <img src={IMG3} alt="" />
           </div>
-          <h3>This is a Portfolio Item Title</h3>
+          <h3>Used Car Price prediciton Model</h3>
           <div className="portfolio__item-cta">
-          <a href="#" className='btn'>Github</a>
-          <a href="#"className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/parva3105/car-price-predicitions" className='btn'>Github</a>
           </div>
         </article>
+
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG4} alt="" />
+          </div>
+          <h3>Cat or Dog prediciton Model</h3>
+          <div className="portfolio__item-cta">
+          <a href="https://github.com/parva3105/cat-or-dog" className='btn'>Github</a>
+          </div>
+        </article>
+
+        
       </div>
 
     </section>

@@ -4,6 +4,11 @@ import { RxDotFilled } from 'react-icons/rx'
 import { RiHomeLine } from 'react-icons/ri'
 import { CiLocationOn } from 'react-icons/ci'
 import { BsArrowUpRight } from 'react-icons/bs'
+import mitacs from '../../Assets/Certificates/Certificate of Completion - Shah.pdf'
+import jp from '../../Assets/Certificates/JP Morgan Virtual Forage.pdf'
+import acc from '../../Assets/Certificates/Accenture Dev Forage.pdf'
+
+
 
 
 const Services = () => {
@@ -32,7 +37,7 @@ const Services = () => {
               <li>
                 <RxDotFilled className='service__list-icon'/>
                   <div className="details">
-                    <p className='job__name'>Mitacs Research Assistant <a href='../../Assets/Certificates/Certificate of Completion - Shah.pdf' target='_blank'><BsArrowUpRight /> </a></p>
+                    <p className='job__name'>Mitacs Research Assistant <a href={mitacs} target='_blank'><BsArrowUpRight /> </a></p>
                     <div className='job__details'>
                       <div className="company__name"><RiHomeLine className='details__icon'/> Concordia University</div>
                       <div className="location"><CiLocationOn className='details__icon'/> Montreal , QC , CA</div>
@@ -53,7 +58,7 @@ const Services = () => {
                 <RxDotFilled className='service__list-icon'/>
                   <div className="details">
                     <p className='job__name'>JP Morgan Chase and Co. Software Development Intern 
-                    <a href='../../Assets/Certificates/JP Morgan Virtual Forage.pdf' target='_blank'><BsArrowUpRight /></a></p>
+                    <a href={jp} target='_blank'><BsArrowUpRight /></a></p>
                     <div className='job__details'>
                       <div className="company__name"><RiHomeLine className='details__icon'/> Forage</div>
                       <div className="location"><CiLocationOn className='details__icon'/> Virtual</div>
@@ -64,7 +69,7 @@ const Services = () => {
                 <RxDotFilled className='service__list-icon'/>
                   <div className="details">
                     <p className='job__name'>Accenture Software Development Intern 
-                    <a href='../../Assets/Certificates/Accenture Dev Forage.pdf'target='_blank'><BsArrowUpRight /></a></p>
+                    <a href={acc} target='_blank'><BsArrowUpRight /></a></p>
                     <div className='job__details'>
                       <div className="company__name"><RiHomeLine className='details__icon'/> Forage</div>
                       <div className="location"><CiLocationOn className='details__icon'/> Virtual</div>

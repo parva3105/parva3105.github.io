@@ -1,6 +1,7 @@
 import React , { useRef } from 'react'
 import './contact.css'
 import { AiOutlineMail } from 'react-icons/ai'
+import { SiUpwork } from 'react-icons/si'
 import { BsWhatsapp } from 'react-icons/bs'
 import emailjs from 'emailjs-com'
 
@@ -34,6 +35,12 @@ const Contact = () => {
             <h4>WhatsApp</h4>
             <div className='contact__info'>+919687007573</div>
             <a href="https://api.whatsapp.com/send?phone=+919687007573" target='_blank'>Send a Message</a>
+          </article>
+          <article className="contact__option">
+            <SiUpwork className="contact__option-icon"/>
+            <h4>UpWork</h4>
+            <div className='contact__info'>Parva Shah</div>
+            <a href="https://www.upwork.com/freelancers/~01cd60256783773a19https://www.upwork.com/freelancers/~01cd60256783773a19" target='_blank'>Connect</a>
           </article>
         </div>
         {/* END OF OPTIONS */}

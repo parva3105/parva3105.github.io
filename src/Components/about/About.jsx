@@ -39,9 +39,11 @@ const About = () => {
           </div>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing 
-              elit. Quo ullam, ad, tempora magni amet in pariatur praesentium illum fugiat atque est molestiae laboriosam dolore autem, provident non
-              officia neque iusto.
+            Greetings! I am a fourth-year student pursuing a Bachelor's degree in 
+            Information Technology. My journey in website development began almost two years ago at the start of the
+             lockdown, and since then, I have completed several projects. Currently, I am working with a startup as a Web Developer
+             . As a curious learner, I find Artificial Intelligence to be a fascinating subject. I am a self-taught coder with 
+             expertise in debugging and adaptability to different technology stacks.
             </p>
 
             <a href="#contact" className='btn btn-primary'>Let's Talk</a>

@@ -22,7 +22,7 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon"/>
               <h5>Experience</h5>
-              <small>2+Years Working</small>
+              <small>3+ Years Working</small>
             </article>
 
             {/* <article className="about__card">
@@ -39,11 +39,11 @@ const About = () => {
           </div>
 
             <p>
-            Greetings! I am a fourth-year student pursuing a Bachelor's degree in 
-            Information Technology. My journey in website development began almost two years ago at the start of the
-             lockdown, and since then, I have completed several projects. Currently, I am working with a startup as a Web Developer
-             . As a curious learner, I find Artificial Intelligence to be a fascinating subject. I am a self-taught coder with 
-             expertise in debugging and adaptability to different technology stacks.
+            Greetings! I am currently pursuing my Masters of Science in Software Engineering from Rochetser 
+            Institute of Technology, New York. My journey in website development began almost 3 years ago and ever since I've been 
+            working on myself and learning. Working as a freelance website developer, I take projects where I develope Personal Portfolio , E-Commerce 
+            websites, API Desgining. I am a self-taught coder with expertise in debugging and adaptability to different technology stacks. I'm a avid learner and
+            a team player.
             </p>
 
             <a href="#contact" className='btn btn-primary'>Let's Talk</a>

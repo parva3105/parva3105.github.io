@@ -4,9 +4,10 @@ import IMG1 from '../../Assets/api.png'
 import IMG2 from '../../Assets/blogapp.png'
 import IMG3 from '../../Assets/car price.jpeg'
 import IMG4 from '../../Assets/catordog.jpeg'
-import IMG5 from '../../Assets/School Tracker.png'
 import IMG6 from '../../Assets/ToDo React.png'
 import IMG7 from '../../Assets/WeatherImg.png'
+import IMG8 from '../../Assets/nightclub.png'
+import IMG9 from '../../Assets/rideshare_app.png'
 
 
 
@@ -28,6 +29,26 @@ const Portfolio = () => {
           <a href="#"className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
         </article> */}
+
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG9} alt="" />
+          </div>
+          <h3>RideShare App</h3>
+          <div className="portfolio__item-cta">
+          <a href="https://github.com/parva3105/" className='btn'>Github</a>
+          </div>
+        </article>
+
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG8} alt="" />
+          </div>
+          <h3>NightClub Managment App</h3>
+          <div className="portfolio__item-cta">
+          <a href="https://github.com/parva3105/" className='btn'>Github</a>
+          </div>
+        </article>
 
         <article className="portfolio__item">
           <div className="portfolio__item-image">
@@ -101,6 +122,8 @@ const Portfolio = () => {
           <a href="https://github.com/parva3105/cat-or-dog" className='btn'>Github</a>
           </div>
         </article>
+
+        
 
         
       </div>

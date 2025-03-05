@@ -33,8 +33,8 @@ const Contact = () => {
           <article className="contact__option">
             <BsWhatsapp className="contact__option-icon"/>
             <h4>WhatsApp</h4>
-            <div className='contact__info'>+919687007573</div>
-            <a href="https://api.whatsapp.com/send?phone=+919687007573" target='_blank'>Send a Message</a>
+            <div className='contact__info'>+18484820769</div>
+            <a href="https://api.whatsapp.com/send?phone=+18484820769" target='_blank'>Send a Message</a>
           </article>
           <article className="contact__option">
             <SiUpwork className="contact__option-icon"/>

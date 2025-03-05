@@ -39,11 +39,11 @@ const About = () => {
           </div>
 
             <p>
-            Greetings! I am currently pursuing my Masters of Science in Software Engineering from Rochetser 
-            Institute of Technology, New York. My journey in website development began almost 3 years ago and ever since I've been 
-            working on myself and learning. Working as a freelance website developer, I take projects where I develope Personal Portfolio , E-Commerce 
-            websites, API Desgining. I am a self-taught coder with expertise in debugging and adaptability to different technology stacks. I'm a avid learner and
-            a team player.
+            Hey there! I'm Parva Shah, currently diving deep into my Masters in Software Engineering at the Rochester Institute of Technology, New York. My adventure in web development kicked off about three years ago, and it's been a fantastic ride of continuous learning and self-improvement ever since.
+
+I’ve been freelancing as a web developer, tackling projects like Personal Portfolios, E-Commerce sites, and API Designing. I’m a self-taught coder who’s pretty good at debugging and can easily adapt to different tech stacks. I’m all about learning new things and love being part of a team.
+
+When I’m not coding, you can find me exploring the latest tech trends, experimenting with new frameworks, or contributing to exciting projects. 
             </p>
 
             <a href="#contact" className='btn btn-primary'>Let's Talk</a>

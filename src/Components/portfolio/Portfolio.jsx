@@ -36,7 +36,7 @@ const Portfolio = () => {
           </div>
           <h3>RideShare App</h3>
           <div className="portfolio__item-cta">
-          <a href="https://github.com/parva3105/" className='btn'>Github</a>
+          <a href="https://git.rc.rit.edu/swen-610-2023-01/db/db-team2/rest-ps7384" className='btn'>Github</a>
           </div>
         </article>
 
@@ -46,7 +46,7 @@ const Portfolio = () => {
           </div>
           <h3>NightClub Managment App</h3>
           <div className="portfolio__item-cta">
-          <a href="https://github.com/parva3105/" className='btn'>Github</a>
+          <a href="https://git.rc.rit.edu/swen-610-2023-01/db/db-team2/team-2-common" className='btn'>Github</a>
           </div>
         </article>
 

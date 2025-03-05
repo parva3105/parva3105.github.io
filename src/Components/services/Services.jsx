@@ -27,6 +27,16 @@ const Services = () => {
               <li>
                 <RxDotFilled className='service__list-icon'/>
                   <div className="details">
+                    <p className='job__name'>Reseacher</p>
+                      <div className='job__details'>
+                        <div className="company__name"><RiHomeLine className='details__icon'/> Rochester Institute of Technology</div>
+                        <div className="location"><CiLocationOn className='details__icon'/> NY, USA</div>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                <RxDotFilled className='service__list-icon'/>
+                  <div className="details">
                     <p className='job__name'>Junior Web Developer</p>
                       <div className='job__details'>
                         <div className="company__name"><RiHomeLine className='details__icon'/> Zentire IT Solutions</div>
@@ -37,7 +47,7 @@ const Services = () => {
               <li>
                 <RxDotFilled className='service__list-icon'/>
                   <div className="details">
-                    <p className='job__name'>Mitacs Research Assistant <a href={mitacs} target='_blank'><BsArrowUpRight /> </a></p>
+                    <p className='job__name'>Research Developer <a href={mitacs} target='_blank'><BsArrowUpRight /> </a></p>
                     <div className='job__details'>
                       <div className="company__name"><RiHomeLine className='details__icon'/> Concordia University</div>
                       <div className="location"><CiLocationOn className='details__icon'/> Montreal , QC , CA</div>

@@ -1,13 +1,28 @@
-import React from 'react'
-import CV from '../../Assets/Resume_ParvaShah.pdf'
+import React from 'react';
+import CV from '../../Assets/ParvaShah_Resume.pdf';
 
 const CTA = () => {
-  return (
-    <div className='cta'>
-        <a href={CV} download className='btn'>Download CV</a>
-        <a href="#contact" className='btn btn-primary'>Contact</a>
-    </div>
-  )
-}
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = CV;
+    link.setAttribute('download', 'Parvash_Resume.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
-export default CTA
+  return (
+    <div className="cta">
+      <a 
+        href="#" 
+        className="btn btn-primary" 
+        onClick={handleDownload}
+      >
+        Download CV
+      </a>
+      <a href="#contact" className="btn btn-primary">Contact</a>
+    </div>
+  );
+};
+
+export default CTA;

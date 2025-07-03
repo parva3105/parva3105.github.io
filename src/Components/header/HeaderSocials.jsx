@@ -6,25 +6,25 @@ const HeaderSocials = () => {
     const socialLinks = [
         {
             icon: <FaLinkedinIn />,
-            url: "https://linkedin.com/in/parvashah",
+            url: "https://linkedin.com/in/parva3105",
             label: "LinkedIn Profile",
             color: "#0077b5"
         },
         {
             icon: <FaGithub />,
-            url: "https://github.com/parvashah",
+            url: "https://github.com/parva3105",
             label: "GitHub Profile",
             color: "#333"
         },
         {
             icon: <FaTwitter />,
-            url: "https://twitter.com/parvashah",
+            url: "https://twitter.com/",
             label: "Twitter Profile",
             color: "#1da1f2"
         },
         {
             icon: <FaInstagram />,
-            url: "https://instagram.com/parvashah",
+            url: "https://instagram.com/parva3105",
             label: "Instagram Profile",
             color: "#e4405f"
         }

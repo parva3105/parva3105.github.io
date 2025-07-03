@@ -1,0 +1,123 @@
+/* ScrollToTop Component Styles */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: var(--transition-base);
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-primary);
+    border: none;
+    border-radius: var(--radius-full);
+    color: var(--color-white);
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-secondary);
+    border-radius: inherit;
+    opacity: 0;
+    transition: var(--transition-base);
+    z-index: -1;
+}
+
+.scroll-btn:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: var(--shadow-glow);
+}
+
+.scroll-btn:hover::before {
+    opacity: 1;
+}
+
+.scroll-btn:active {
+    transform: translateY(-1px) scale(1.05);
+}
+
+/* Animation for the arrow icon */
+.scroll-btn svg {
+    transition: var(--transition-base);
+}
+
+.scroll-btn:hover svg {
+    animation: bounceUp 0.6s ease-in-out;
+}
+
+@keyframes bounceUp {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .scroll-to-top {
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+    
+    .scroll-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .scroll-to-top {
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    .scroll-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Accessibility */
+.scroll-btn:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scroll-btn,
+    .scroll-btn svg,
+    .scroll-to-top {
+        animation: none !important;
+        transition: none !important;
+    }
+}

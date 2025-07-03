@@ -1,28 +1,29 @@
 import React from 'react';
+import { FaDownload, FaEnvelope } from 'react-icons/fa';
 import CV from '../../Assets/ParvaShah_Resume.pdf';
 
 const CTA = () => {
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = CV;
-    link.setAttribute('download', 'Parvash_Resume.pdf');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
-  return (
-    <div className="cta">
-      <a 
-        href="#" 
-        className="btn btn-primary" 
-        onClick={handleDownload}
-      >
-        Download CV
-      </a>
-      <a href="#contact" className="btn btn-primary">Contact</a>
-    </div>
-  );
+    return (
+        <div className="cta">
+            <a 
+                href={CV} 
+                download="Parva_Shah_Resume.pdf" 
+                className="btn btn-primary hover-lift"
+                aria-label="Download Resume"
+            >
+                <FaDownload />
+                Download CV
+            </a>
+            <a 
+                href="#contact" 
+                className="btn btn-secondary hover-lift"
+                aria-label="Contact Me"
+            >
+                <FaEnvelope />
+                Let's Talk
+            </a>
+        </div>
+    );
 };
 
 export default CTA;

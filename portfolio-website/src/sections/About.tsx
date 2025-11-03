@@ -7,24 +7,29 @@ import { AnimationReveal } from "@/components/AnimationReveal"
 
 const skills = [
   {
+    category: "Languages",
+    icon: Palette,
+    technologies: ["Python", "Java", "C++", "JavaScript", "Go", "TypeScript"]
+  },
+  {
     category: "Frontend",
     icon: Palette,
-    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
+    technologies: ["React", "Next.js", "Tailwind CSS", "JavaScript", "HTML", "CSS"]
   },
   {
     category: "Backend",
     icon: Code,
-    technologies: ["Node.js", "Express", "PostgreSQL", "MongoDB", "GraphQL"]
+    technologies: ["Node.js", "Express", "PostgreSQL", "MongoDB", "GraphQL", "AWS S3", "AWS Lambda"]
   },
   {
     category: "Tools & DevOps",
     icon: Zap,
-    technologies: ["Git", "Docker", "AWS", "Vercel", "Figma"]
+    technologies: ["Git", "Docker", "AWS", "Vercel", "CI/CD", "AWS Lambda"]
   },
   {
     category: "Collaboration",
     icon: Users,
-    technologies: ["Agile", "Scrum", "Code Review", "Mentoring", "Team Leadership"]
+    technologies: ["Agile", "Scrum", "Code Review", "Mentoring", "Team Leadership","SDLC"]
   }
 ]
 
@@ -47,24 +52,25 @@ export function About() {
               <div className="space-y-6">
                 <div className="prose prose-neutral dark:prose-invert max-w-none">
                   <p className="text-lg leading-relaxed text-muted-foreground">
-                    I&apos;m a full-stack developer with over 5 years of experience building web applications 
-                    that solve real-world problems. My journey started with curiosity about how websites work, 
-                    and it has evolved into a passion for creating elegant, performant, and user-friendly solutions.
+                  I’m a Software Engineer with 3+ years of experience building end-to-end products, from concept and
+                  architecture to deployment and iteration. What began as curiosity about how software works transformed 
+                  into a passion for delivering polished, user-focused solutions that scale.
                   </p>
                   <p className="text-lg leading-relaxed text-muted-foreground">
-                    When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing to open-source projects, 
-                    or sharing knowledge with the developer community. I believe in continuous learning and staying 
-                    up-to-date with the latest trends in web development.
+                    <br/>
+                    When I’m not engineering products, I’m experimenting with new tools, exploring modern architectures,
+                    contributing to open-source, and sharing insights with the dev community. I&apos;m driven by collaboration,
+                    continuous improvement, and building technology that solves real problems.
                   </p>
                 </div>
                 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center p-4 rounded-lg bg-card/50 backdrop-blur-sm">
-                    <div className="text-2xl font-bold text-primary">50+</div>
+                    <div className="text-2xl font-bold text-primary">20+</div>
                     <div className="text-sm text-muted-foreground">Projects Completed</div>
                   </div>
                   <div className="text-center p-4 rounded-lg bg-card/50 backdrop-blur-sm">
-                    <div className="text-2xl font-bold text-primary">5+</div>
+                    <div className="text-2xl font-bold text-primary">3+</div>
                     <div className="text-sm text-muted-foreground">Years Experience</div>
                   </div>
                 </div>

@@ -151,11 +151,11 @@ export function ProjectCard({ project, variant = "grid", className }: ProjectCar
   // Default grid variant
   return (
     <div className={cn(
-      "group relative overflow-hidden rounded-xl border bg-card/50 backdrop-blur-sm hover:bg-card/80 hover:shadow-lg transition-all duration-300",
+      "group relative overflow-hidden rounded-xl border bg-card/50 backdrop-blur-sm hover:bg-card/80 hover:shadow-lg transition-all duration-300 h-full flex flex-col",
       className
     )}>
       {project.image && (
-        <div className="aspect-video relative overflow-hidden">
+        <div className="aspect-video relative overflow-hidden flex-shrink-0">
           <Image
             src={project.image}
             alt={project.title}
@@ -171,25 +171,25 @@ export function ProjectCard({ project, variant = "grid", className }: ProjectCar
         </div>
       )}
       
-      <div className="p-5 space-y-4">
-        <div>
+      <div className="p-5 flex flex-col flex-grow">
+        <div className="mb-4">
           <h3 className="font-semibold text-lg mb-1">{project.title}</h3>
           {project.tagline && (
             <p className="text-sm text-primary">{project.tagline}</p>
           )}
         </div>
         
-        <p className="text-sm text-muted-foreground line-clamp-3">
+        <p className="text-sm text-muted-foreground line-clamp-3 mb-4">
           {project.descriptionShort}
         </p>
         
-        <div className="space-y-3">
+        <div className="space-y-3 flex-grow mb-4">
           {renderTechPills()}
           {renderLinks()}
         </div>
         
         {project.year && (
-          <div className="flex items-center gap-1 text-xs text-muted-foreground">
+          <div className="flex items-center gap-1 text-xs text-muted-foreground mt-auto">
             <Calendar className="w-3 h-3" />
             {project.year}
           </div>

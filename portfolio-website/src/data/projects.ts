@@ -15,106 +15,191 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: 'ecommerce-platform',
-    title: 'Modern E-commerce Platform',
-    tagline: 'Full-stack shopping experience',
-    descriptionShort: 'A comprehensive e-commerce solution with real-time inventory, payment processing, and admin dashboard.',
-    descriptionLong: `# Modern E-commerce Platform
-
-A full-stack e-commerce application built with modern web technologies, featuring:
-
-## Key Features
-- **Real-time Inventory Management**: Live stock updates and notifications
-- **Secure Payment Processing**: Integrated Stripe payment gateway
-- **Admin Dashboard**: Complete order and product management
-- **Responsive Design**: Mobile-first approach with PWA capabilities
-- **Performance Optimized**: Sub-2s load times with image optimization
-
-## Technical Implementation
-- Server-side rendering for SEO optimization
-- Database transactions for data consistency
-- Caching strategies for improved performance
-- Comprehensive error handling and logging
-
-## Results
-- 40% increase in conversion rate
-- 99.9% uptime achieved
-- 85% reduction in page load times`,
-    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Stripe', 'Tailwind CSS', 'Prisma'],
-    image: '/projects/ecommerce-platform.jpg',
+    id: 'myt-modyourtex',
+    title: 'MYT: Mod-Your-Tex',
+    tagline: 'A LaTex Resume Optimizer',
+    descriptionShort: 'An optimizer that tailors your LaTeX resume to a job description using OpenAI API and compiles to PDF with tool orchestration.',
+    tech: ['Next.js', 'TypeScript', 'FastAPI', 'Python', 'OpenAI', 'Tailwind CSS', 'LaTeX',],
+    image: '/projects/myt-mod-your-tex.jpg',
     links: [
-      { label: 'Demo', href: 'https://ecommerce-demo.vercel.app' },
-      { label: 'GitHub', href: 'https://github.com/username/ecommerce-platform' },
-      { label: 'Case Study', href: '/case-studies/ecommerce-platform' }
+      { label: 'Demo', href: 'https://modyourtex.vercel.app/' },
+      { label: 'GitHub', href: 'https://github.com/parva3105/resume-optimizer' },
     ],
     featured: true,
-    year: '2024',
+    year: '2025',
     status: 'live',
-    tags: ['fullstack', 'ecommerce', 'typescript']
+    tags: ['fullstack', 'resume', 'typescript', 'LLM']
   },
   {
-    id: 'ai-chat-app',
-    title: 'AI-Powered Chat Application',
-    tagline: 'Intelligent conversation platform',
-    descriptionShort: 'Real-time chat application with AI integration, featuring smart responses and conversation analytics.',
-    descriptionLong: `# AI-Powered Chat Application
-
-An intelligent chat platform that leverages AI to enhance user conversations and provide analytics insights.
-
-## Features
-- **AI Integration**: OpenAI GPT integration for smart responses
-- **Real-time Messaging**: WebSocket-based instant messaging
-- **Conversation Analytics**: AI-powered sentiment analysis and insights
-- **Multi-platform Support**: Web, mobile, and desktop applications
-- **Custom AI Models**: Fine-tuned models for specific use cases
-
-## Technical Stack
-- Real-time WebSocket communication
-- AI model integration and fine-tuning
-- Advanced analytics and reporting
-- Scalable microservices architecture`,
-    tech: ['React', 'Node.js', 'WebSocket', 'OpenAI API', 'MongoDB', 'Redis'],
-    image: '/projects/ai-chat-app.jpg',
+    id: 'inmailer',
+    title: 'InMailer',
+    tagline: 'High-volume outreach that actually delivers',
+    descriptionShort: 'React + Flask + PostgreSQL platform for templated campaigns, CSV imports, Google OAuth/Gmail API sending, and deliverability logs.',
+    tech: ['React', 'Flask', 'Python', 'PostgreSQL', 'Gmail API', 'Google OAuth', 'JWT', 'REST', 'Docker'],
+    image: '/projects/inmailer.jpg',
     links: [
-      { label: 'Demo', href: 'https://ai-chat-demo.vercel.app' },
-      { label: 'GitHub', href: 'https://github.com/username/ai-chat-app' }
+      { label: 'Demo', href: 'https://inmailer.vercel.app/' },
+      { label: 'GitHub', href: 'https://github.com/parva3105/InMailer' }
     ],
     featured: true,
-    year: '2024',
+    year: '2025',
     status: 'live',
-    tags: ['ai', 'realtime', 'websocket']
+    tags: ['email', 'fullstack', 'python']
   },
   {
-    id: 'portfolio-optimizer',
-    title: 'Portfolio Performance Optimizer',
-    tagline: 'Investment analysis tool',
-    descriptionShort: 'Financial analysis tool for portfolio optimization with risk assessment and performance tracking.',
-    descriptionLong: `# Portfolio Performance Optimizer
-
-A sophisticated financial analysis tool designed for portfolio optimization and risk management.
-
-## Core Functionality
-- **Portfolio Analysis**: Comprehensive risk and return analysis
-- **Optimization Algorithms**: Modern portfolio theory implementation
-- **Real-time Data**: Live market data integration
-- **Risk Assessment**: Advanced risk metrics and stress testing
-- **Performance Tracking**: Historical performance analysis
-
-## Technical Features
-- Complex financial calculations and algorithms
-- Real-time data processing and visualization
-- Secure data handling and encryption
-- Responsive charts and interactive dashboards`,
-    tech: ['Python', 'React', 'D3.js', 'FastAPI', 'PostgreSQL', 'Docker'],
-    image: '/projects/portfolio-optimizer.jpg',
+    id: 'sellwizr-data-pipeline',
+    title: 'Kafka Data Pipeline',
+    tagline: 'From events to insights in seconds',
+    descriptionShort: 'Go services producing and consuming Kafka topics with backpressure, idempotency, and containerized deployment.',
+    tech: ['Go', 'Apache Kafka', 'Docker', 'Make', 'CI/CD'],
+    image: '/projects/sellwizr-data-pipeline.jpg',
     links: [
-      { label: 'GitHub', href: 'https://github.com/username/portfolio-optimizer' },
-      { label: 'Case Study', href: '/case-studies/portfolio-optimizer' }
+      { label: 'GitHub', href: 'https://github.com/parva3105/sellwizr-assessment' }
     ],
     featured: false,
+    year: '2025',
+    status: 'archived',
+    tags: ['golang', 'streaming', 'kafka']
+  },
+  {
+    id: 'ai-windows-assistant',
+    title: 'AI Windows Assistant',
+    tagline: 'Desktop automation with a modern UI',
+    descriptionShort: 'React + Vite frontend with logs/history that bridges natural-language intents to system utilities.',
+    tech: ['React', 'Vite', 'TypeScript', 'Electron', 'Node.js'],
+    image: '/projects/ai-windows-assistant.jpg',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/parva3105/wrap-up' }
+    ],
+    featured: false,
+    year: '2025',
+    status: 'archived',
+    tags: ['desktop', 'typescript', 'automation', 'LLM']
+  },
+  {
+    id: 'gujarati-hate-speech-classifier',
+    title: 'Gujarati Hate Speech Classifier',
+    tagline: 'Indic-BERT with active learning',
+    descriptionShort: 'Corpus building, fine-tuning, evaluation, and data-centric loops for minority-language safety.',
+    tech: ['Python', 'Hugging Face Transformers', 'Indic-BERT', 'PyTorch', 'scikit-learn', 'pandas', 'Jupyter'],
+    image: '/projects/gujarati-hate-speech.jpg',
+    links: [
+      { label: 'Case Study', href: 'https://github.com/parva3105/Gujarati-Hate-Speech-Classifier/blob/master/Gujarati-Hate-Speech-Classifier_ps7384.pdf' },
+      { label: 'GitHub', href: 'https://github.com/parva3105/Gujarati-Hate-Speech-Classifier' }
+    ],
+    featured: true,
+    year: '2025',
+    status: 'live',
+    tags: ['nlp', 'ml', 'research']
+  },
+  {
+    id: 'club-management-app',
+    title: 'Club Management App',
+    tagline: 'Ops, members, and events in one place',
+    descriptionShort: 'Full-stack nightclub management solution built by a 4-person team with CI/CD.',
+    tech: ['SQL', 'Flask', 'Python', 'React'],
+    image: '/projects/club-management-app.jpg',
+    links: [
+      { label: 'CodeBase', href: 'https://git.rc.rit.edu/swen-610-2023-01/db/db-team2/team-2-common' },
+    ],
+    featured: false,
+    year: '2024',
+    status: 'archived',
+    tags: ['fullstack', 'team', 'rit']
+  },
+  {
+    id: 'rideshare-app',
+    title: 'Rideshare App',
+    tagline: 'Reliable trips with geo-aware routing',
+    descriptionShort: 'Platform with Django + PostgreSQL backend and a Node.js geolocation service; API prototyped in Flask.',
+    tech: ['Django', 'PostgreSQL', 'Node.js', 'Geolocation APIs', 'Flask'],
+    image: '/projects/rideshare-app.jpg',
+    links: [
+      { label: 'CodeBase', href: 'https://git.rc.rit.edu/swen-610-2023-01/db/db-team2/rest-ps7384' }
+    ],
+    featured: false,
+    year: '2024',
+    status: 'archived',
+    tags: ['backend', 'django', 'maps']
+  },
+  {
+    id: 'task-manager-api',
+    title: 'Task Management API',
+    tagline: 'Simple CRUD, solid foundations',
+    descriptionShort: 'Express + MongoDB REST API with auth, file uploads for avatars, email via SendGrid, and task CRUD endpoints.',
+    tech: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'JWT', 'SendGrid', 'Multer', 'Sharp', 'Bcrypt'],
+    image: '/projects/task-manager.jpg',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/parva3105/task-manager' },
+      { label: 'API Link', href: 'https://taskmanager-first.herokuapp.com/' }
+    ],
+    featured: true,
     year: '2023',
     status: 'live',
-    tags: ['finance', 'python', 'data-analysis']
+    tags: ['api', 'node', 'mongodb']
+  },
+  {
+    id: 'copy-url',
+    title: 'CopyURL',
+    tagline: 'One-click URL copier for your browser toolbar',
+    descriptionShort: 'Lightweight browser extension that copies the current tab’s URL to your clipboard on click. No tracking or external services.',
+    tech: ['Chrome Extension', 'JavaScript'],
+    image: '/projects/copy-url.jpg',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/parva3105/copy-url' },
+      { label: 'Privacy Policy', href: 'https://github.com/parva3105/copy-url#readme' },
+      { label: 'Demo', href: '#' }
+    ],
+    featured: false,
+    year: '2025',
+    status: 'wip',
+    tags: ['extension', 'utility', 'javascript'],
+  },
+  {
+    id: 'weather-app',
+    title: 'WeatherApp',
+    tagline: 'Real-time weather with geocoding',
+    descriptionShort: 'Node + Express app that uses Mapbox for geocoding and Weatherstack for current conditions, rendered with Handlebars templates.',
+    tech: ['Node.js', 'Express', 'Handlebars', 'Weatherstack API', 'Mapbox Geocoding', 'CSS'],
+    image: '/projects/weather-app.jpg',
+    links: [
+      { label: 'Demo', href: 'https://weatherapp-first.herokuapp.com' },
+      { label: 'GitHub', href: 'https://github.com/parva3105/weather-app' }
+    ],
+    featured: true,
+    year: '2021',
+    status: 'archived',
+    tags: ['fullstack', 'api', 'node'],
+  },
+  {
+    id: 'blog-app',
+    title: 'Django Blog',
+    tagline: 'Simple blog built with Django',
+    descriptionShort: 'Basic blog project scaffold with a Django app and project, using templates and SQLite for storage.',
+    tech: ['Python', 'Django', 'SQLite', 'HTML', 'CSS'],
+    image: '/projects/blog-app.jpg',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/parva3105/blog-app' }
+    ],
+    featured: false,
+    year: '2022',
+    status: 'archived',
+    tags: ['backend', 'django', 'python'],
+  },
+  {
+    id: 'car-price-predicitions',
+    title: 'Car Price Predictions',
+    tagline: 'ML models to estimate used-car prices',
+    descriptionShort: 'Supervised learning project to predict car prices from features like year, mileage, and fuel type. Includes data cleaning, feature encoding, model training, and evaluation.',
+    tech: ['Python', 'pandas', 'NumPy', 'scikit-learn', 'Jupyter'],
+    image: '/projects/car-price-predictions.jpg',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/parva3105/car-price-predicitions' }
+    ],
+    featured: false,
+    year: '2022',
+    status: 'archived',
+    tags: ['ml', 'regression', 'python'],
   }
 ]
 

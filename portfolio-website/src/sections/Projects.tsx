@@ -136,7 +136,7 @@ export function Projects() {
               </p>
               <div className="flex gap-4 justify-center">
                 <Button asChild>
-                  <a href="https://github.com/parvashah" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/parva3105" target="_blank" rel="noopener noreferrer">
                     View All Projects
                   </a>
                 </Button>

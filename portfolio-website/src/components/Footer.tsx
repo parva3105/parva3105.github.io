@@ -5,17 +5,17 @@ import { ResponsiveContainer } from "@/components/ResponsiveContainer"
 const socialLinks = [
   {
     name: "GitHub",
-    href: "https://github.com/parvashah",
+    href: "https://github.com/parva3105",
     icon: Github,
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/parvashah",
+    href: "https://linkedin.com/in/parva3105",
     icon: Linkedin,
   },
   {
     name: "Email",
-    href: "mailto:parva@example.com",
+    href: "mailto:work.parry@gmail.com",
     icon: Mail,
   },
 ]
@@ -98,7 +98,7 @@ export function Footer() {
               © {new Date().getFullYear()} Parva Shah. All rights reserved.
             </p>
             <div className="flex items-center gap-4 text-sm text-muted-foreground">
-              <span>Built with Next.js & Tailwind CSS</span>
+              <span>Built with Compassion and using Next.js & Tailwind CSS</span>
               <Link
                 href="https://vercel.com"
                 target="_blank"

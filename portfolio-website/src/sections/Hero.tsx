@@ -33,15 +33,15 @@ export function Hero() {
                 <span className="text-primary">Parva Shah</span>
               </h1>
               <p className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto">
-                Full-stack developer crafting digital experiences that matter
+                Software Engineer crafting innovative solutions and creative fixes.
               </p>
             </div>
           </AnimationReveal>
 
           <AnimationReveal direction="up" delay={400}>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              I specialize in building modern web applications with React, Node.js, and TypeScript. 
-              Passionate about creating solutions that are both beautiful and functional.
+            Software engineer with experience building distributed systems, optimizing performance, and shipping production-ready features.
+            Committed to building technology that is efficient, scalable, and user-centric.
             </p>
           </AnimationReveal>
 

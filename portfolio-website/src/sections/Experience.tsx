@@ -7,77 +7,98 @@ import { AnimationReveal } from "@/components/AnimationReveal"
 
 const experiences = [
   {
-    title: "Senior Full-Stack Developer",
-    company: "TechCorp Solutions",
-    location: "San Francisco, CA",
-    period: "2022 - Present",
-    type: "Full-time",
-    description: "Leading development of enterprise web applications using React, Node.js, and cloud technologies. Mentoring junior developers and driving technical decisions.",
-    achievements: [
-      "Led a team of 5 developers in building a scalable e-commerce platform",
-      "Improved application performance by 40% through optimization initiatives",
-      "Implemented CI/CD pipelines reducing deployment time by 60%"
-    ],
-    technologies: ["React", "Node.js", "TypeScript", "AWS", "PostgreSQL", "Docker"]
-  },
-  {
-    title: "Full-Stack Developer",
-    company: "StartupXYZ",
-    location: "Remote",
-    period: "2020 - 2022",
-    type: "Full-time",
-    description: "Developed and maintained multiple web applications from concept to deployment. Collaborated with cross-functional teams to deliver high-quality products.",
-    achievements: [
-      "Built a real-time collaboration platform serving 10,000+ users",
-      "Redesigned user interface resulting in 25% increase in user engagement",
-      "Established coding standards and best practices for the development team"
-    ],
-    technologies: ["Vue.js", "Express", "MongoDB", "Socket.io", "Redis", "Heroku"]
-  },
-  {
-    title: "Frontend Developer",
-    company: "Digital Agency Pro",
+    title: "Software Engineering Intern",
+    company: "SellWizr",
     location: "New York, NY",
-    period: "2019 - 2020",
-    type: "Full-time",
-    description: "Created responsive web applications and landing pages for various clients. Focused on user experience and modern web standards.",
+    period: "May'25 - August'25",
+    type: "Internship",
+    description: "Develeoped an end-to-end data pipeline for which consumes data using native scrapers.",
     achievements: [
-      "Delivered 20+ client projects on time and within budget",
-      "Implemented responsive design patterns improving mobile experience",
-      "Collaborated with designers to create pixel-perfect implementations"
+      "Built an AWS pipeline (EC2 + SQS + S3) processing 10K+ requests/day (~300K/mo) and ~2 GB/day, using batching/right-sized compute to reduce per-ingest cost while scaling reliably.",
+      "Engineered a Python scraper (BeautifulSoup, Requests, asyncio) parsing 150+ profiles/hour (~3.6K/day) at ~95% accuracy, replacing manual/third-party work to save recurring vendor fees and ops hours each month.",
+      "Added CloudWatch monitoring and Auto Scaling to handle traffic spikes, cutting idle capacity and cloud spend while improving reliability."
     ],
-    technologies: ["React", "JavaScript", "CSS3", "Sass", "Webpack", "Figma"]
+    technologies: ["Python", "BeautifulSoup", "Requests", "asyncio", "AWS EC2", "AWS SQS", "AWS S3", "Amazon CloudWatch", "AWS Auto Scaling"]
+
+  },
+  {
+    title: "Graduate Software Engineer",
+    company: "Rochester Institute of Technology",
+    location: "Rochester, NY",
+    period: "Jan'24 - Aug'25",
+    type: "Full-time",
+    description: "Automation, analysis, and debugging infrastructure for research and teaching systems.",
+    achievements: [
+      "Replaced manual processes with Python scripts + cron, shrinking effort from 10+ hrs/week → <3 hrs/week (≈7+ hrs/week saved → ~350+ hrs/year of regained capacity).",
+      "Reverse-engineered 6,000+ WeChat mini-apps (APKTool/JADX/Wireshark) to flag malicious behaviors—hardening security posture at scale. ",
+      "Automated API tracing via Python middleware, improving debugging across hundreds of endpoints—faster issue resolution, fewer costly regressions."
+    ],
+    technologies: ["Python", "Cron", "Logging Middleware", "REST APIs", "APKTool", "JADX", "Wireshark"]
+  },
+  {
+    title: "Software Engineer",
+    company: "Zenture IT",
+    location: "Remote",
+    period: "Aug'22 - Aug'23",
+    type: "Full-time",
+    description: "Modernized a legacy stack and boosted throughput for data-heavy workflows.",
+    achievements: [
+      "Migrated UI jQuery/PHP → React, cutting page load from 2.5s → 1.2s for 500+ daily users (≈52% faster; improved conversion and support costs).",
+      "Designed a Java thread-pooling system, raising throughput from 20K → 30K records/hour (≈50% gain; lower compute time per batch).",
+      "Delivered React + Flask PoCs that helped onboard 500+ customers, accelerating sales cycles and reducing bespoke engineering time. "
+    ],
+    technologies: ["React", "Java", "Flask", "jQuery", "PHP"]
+
+  },
+  {
+    title: "Research Assistant",
+    company: "Concordia University",
+    location: "Montreal, Canada",
+    period: "May'22 - Aug'23",
+    type: "Internship",
+    description: "ML research + tooling to speed data processing and raise model quality. ",
+    achievements: [
+      "Re-implemented the ULP algorithm in TensorFlow/Keras, improving model accuracy by 25% (fewer costly misclassifications downstream).",
+      "Built a Django UI with Pandas/NumPy for log parsing, shrinking processing time from 10h → 6h (≈40% faster; reduced compute + analyst hours). ",
+      "Ran an ML testing pipeline (scikit-learn + CV) processing 12M+ log entries in 2h vs 6h (~3× speedup; quicker experiment cycles)."
+    ],
+    technologies: ["TensorFlow", "Keras", "Django", "Pandas", "NumPy", "scikit-learn"]
+
   }
 ]
 
 const education = [
   {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "University of Technology",
-    location: "Boston, MA",
-    period: "2015 - 2019",
-    description: "Graduated with honors. Focused on software engineering, algorithms, and web development."
+    degree: "Master of Science in Software Engineering",
+    institution: "Rochester Institute of Technology",
+    location: "Rochester, NY",
+    period: "2023-2025",
+    description: "Graduated with Distinction. Focused on software engineering, algorithms, and Software Architecture."
+  },
+  {
+    degree: "Bachelor of Technology in Information Technology",
+    institution: "Gujarat Technological University",
+    location: "Ahmedabad, Gujarat",
+    period: "2019-2023",
+    description: "Graduated with Distinction. With MITACS Scholarship and GRI Funding for Masters"
   }
 ]
 
 const certifications = [
   {
-    name: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
+    name: "MITACS Globalink Reserach Intern",
+    issuer: "MITACS",
     date: "2023",
-    credential: "AWS-SAA-2023"
   },
   {
     name: "Google Cloud Professional Developer",
     issuer: "Google Cloud",
-    date: "2022",
-    credential: "GCP-PD-2022"
+    date: "2025",
   },
   {
     name: "React Developer Certification",
-    issuer: "Meta",
+    issuer: "Udemy",
     date: "2021",
-    credential: "META-REACT-2021"
   }
 ]
 
@@ -217,7 +238,6 @@ export function Experience() {
                     <p className="text-sm text-muted-foreground mt-1">{cert.issuer}</p>
                     <div className="flex items-center justify-between mt-3">
                       <span className="text-xs text-primary">{cert.date}</span>
-                      <span className="text-xs text-muted-foreground">{cert.credential}</span>
                     </div>
                   </div>
                 </AnimationReveal>

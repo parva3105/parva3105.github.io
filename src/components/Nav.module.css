@@ -1,0 +1,128 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1rem 1.5rem;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.nav.scrolled {
+  background: rgba(10, 11, 15, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 var(--border);
+}
+
+.wrap {
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.logoAccent { color: var(--accent); }
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .burger { display: none; }
+}
+
+.link {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  border-radius: 0.375rem;
+}
+
+.link:hover {
+  color: var(--text);
+  background: var(--surface);
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.burger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+}
+
+.burger span:nth-child(1) {
+  transform-origin: top left;
+}
+
+.burger span:nth-child(2) {
+  transform-origin: center;
+}
+
+.burger span:nth-child(3) {
+  transform-origin: bottom left;
+}
+
+.burgerOpen:nth-child(1) {
+  transform: rotate(45deg) translate(2px, 0);
+}
+
+.burgerOpen:nth-child(2) {
+  opacity: 0;
+}
+
+.burgerOpen:nth-child(3) {
+  transform: rotate(-45deg) translate(2px, 0);
+}
+
+.mobile {
+  overflow: hidden;
+  padding-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .mobile { display: none !important; }
+}
+
+.mobileLink {
+  display: block;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  border-radius: 0.375rem;
+}
+
+.mobileLink:hover {
+  color: var(--text);
+  background: var(--surface);
+}

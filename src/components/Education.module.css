@@ -8,7 +8,7 @@
 }
 
 .header {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .degree {
@@ -28,33 +28,11 @@
 .location {
   font-size: 0.9rem;
   color: var(--text-muted);
+  margin-bottom: 0.2rem;
 }
 
-.gpa {
+.period {
   font-family: var(--font-mono);
   font-size: 0.9rem;
   color: var(--text-muted);
-  margin-bottom: 1rem;
-}
-
-.coursesLabel {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 0.5rem;
-}
-
-.courses {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-}
-
-.courses li {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  padding: 0.2rem 0.5rem;
-  background: var(--bg-elevated);
-  border-radius: 0.25rem;
 }

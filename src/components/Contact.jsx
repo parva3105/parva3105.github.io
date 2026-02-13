@@ -1,15 +1,14 @@
 import { motion } from 'framer-motion'
 import Section from './Section'
+import { contact } from '../data/contact'
 import styles from './Contact.module.css'
 
 const fadeIn = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }
 
 const links = [
-  { href: 'https://parva-shah.vercel.app/', label: 'Portfolio', icon: '↗' },
-  { href: 'https://github.com/parva3105', label: 'GitHub', icon: '↗' },
-  { href: 'mailto:work.parry@gmail.com', label: 'work.parry@gmail.com', icon: '✉' },
-  { href: 'tel:+18484820769', label: '(848) 482-0769', icon: '📞' },
-  { href: 'https://www.linkedin.com/in/parva-shah', label: 'LinkedIn', icon: '↗' },
+  { href: `mailto:${contact.email}`, label: contact.email, icon: 'Email' },
+  { href: contact.phoneHref, label: contact.phone, icon: 'Phone' },
+  { href: contact.linkedin, label: 'LinkedIn', icon: 'Link' },
 ]
 
 export default function Contact() {
@@ -17,9 +16,10 @@ export default function Contact() {
     <Section
       id="contact"
       title="Get in touch"
-      subtitle="Open to roles and collaboration. Say hi."
+      subtitle="Open to roles and collaboration."
     >
       <motion.div className={styles.wrap} variants={fadeIn}>
+        <p className={styles.name}>{contact.name}</p>
         <div className={styles.links}>
           {links.map(({ href, label, icon }) => (
             <a
@@ -35,7 +35,7 @@ export default function Contact() {
           ))}
         </div>
         <p className={styles.footer}>
-          Built with React, Three.js & Vercel. © {new Date().getFullYear()} Parva Shah.
+          Built with React, Three.js and Vercel. Copyright {new Date().getFullYear()} {contact.name}.
         </p>
       </motion.div>
     </Section>

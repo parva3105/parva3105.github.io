@@ -2,6 +2,7 @@ import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { motion } from 'framer-motion'
 import { usePrefersReducedMotion } from '../hooks/usePrefersReducedMotion'
+import { contact } from '../data/contact'
 import Scene3D from './Scene3D'
 import styles from './Hero.module.css'
 
@@ -41,7 +42,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          Parva Shah
+          {contact.name}
         </motion.h1>
         <motion.p
           className={styles.tagline}
@@ -49,7 +50,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Software Engineer
+          {contact.role}
         </motion.p>
         <motion.p
           className={styles.sub}
@@ -57,7 +58,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          Building scalable systems, ML pipelines & full‑stack apps.
+          {contact.heroSubtitle}
         </motion.p>
         <motion.div
           className={styles.cta}
@@ -67,6 +68,9 @@ export default function Hero() {
         >
           <a href="#projects" className={styles.btnPrimary}>
             View work
+          </a>
+          <a href={contact.resumePath} download className={styles.btnSecondary}>
+            Download Resume
           </a>
           <a href="#contact" className={styles.btnSecondary}>
             Get in touch

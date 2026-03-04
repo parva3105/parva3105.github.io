@@ -6,11 +6,12 @@ import styles from './Skills.module.css'
 const fadeIn = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }
 
 const groups = [
-  { label: 'Languages', items: skills.languages },
-  { label: 'Frameworks', items: skills.frameworks },
-  { label: 'AI / ML', items: skills.aiMl },
-  { label: 'Datastores', items: skills.datastores },
-  { label: 'DevOps', items: skills.devops },
+  { label: 'Languages', icon: '💻', items: skills.languages },
+  { label: 'Cloud & Infra', icon: '☁️', items: skills.cloudInfra },
+  { label: 'Frameworks', icon: '⚙️', items: skills.frameworks },
+  { label: 'Analytics', icon: '📊', items: skills.analytics },
+  { label: 'AI / ML', icon: '🤖', items: skills.aiMl },
+  { label: 'Datastores', icon: '🗄️', items: skills.datastores },
 ]
 
 export default function Skills() {
@@ -18,16 +19,19 @@ export default function Skills() {
     <Section
       id="skills"
       title="Skills"
-      subtitle="Tech I work with daily."
+      subtitle="Technologies and tools I work with."
     >
       <div className={styles.grid}>
-        {groups.map(({ label, items }) => (
+        {groups.map(({ label, icon, items }) => (
           <motion.div
             key={label}
             className={styles.group}
             variants={fadeIn}
           >
-            <h3 className={styles.label}>{label}</h3>
+            <div className={styles.groupHeader}>
+              <span className={styles.groupIcon}>{icon}</span>
+              <h3 className={styles.label}>{label}</h3>
+            </div>
             <div className={styles.tags}>
               {items.map((item) => (
                 <span key={item} className={styles.tag}>

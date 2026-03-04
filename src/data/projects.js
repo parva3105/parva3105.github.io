@@ -1,23 +1,30 @@
 export const projects = [
   {
     name: 'Mod-Your-Tex',
-    description: 'LaTeX resume-tailoring web app. Ingests user .tex, optimizes against JD, compiles to PDF, returns direct download.',
+    description:
+      'Built a LaTeX resume-tailoring web app (Next.js, FastAPI) that optimizes resumes against job descriptions and returns compiled PDFs. Added authentication, rate limiting, logging, and testing for reliability.',
     tech: ['Next.js', 'FastAPI', 'OpenAI', 'Tectonic'],
-    tags: ['Input validation', 'structured error logging', 'basic auth', 'rate limiting', 'accessibility', 'CI/CD Vercel/Render', 'mock-based tests'],
+    tags: ['Input validation', 'structured error logging', 'auth', 'rate limiting', 'CI/CD'],
   },
   {
     name: 'InMailer',
-    description: 'Web-based email outreach automation. 5K–15K personalized emails/day with ≥95% delivery success, 10x faster campaigns, 200–500 daily users on free-tier infra.',
-    tech: ['React', 'Flask', 'PostgreSQL'],
+    description:
+      'Designed scalable outreach automation platform enabling small teams to run personalized campaigns efficiently under limited infrastructure. Handles 5K–15K emails/day with ≥95% delivery success.',
+    tech: ['React', 'Flask', 'PostgreSQL', 'FastAPI'],
+    tags: ['Personalization', 'campaign automation', 'scalability'],
   },
   {
     name: 'Real-time Kafka Data Pipeline',
-    description: 'Robust, scalable real-time messaging pipeline with structured JSON streaming and efficient inter-service communication.',
+    description:
+      'Built a robust scalable real-time messaging pipeline using GoLang, Kafka, and Docker Compose, ensuring structured JSON data streaming and efficient inter-service communication, significantly improving data processing reliability.',
     tech: ['Go', 'Kafka', 'Docker Compose'],
+    tags: ['Streaming', 'JSON data', 'inter-service communication'],
   },
   {
     name: 'Rideshare App',
-    description: 'Rideshare platform with geolocation APIs. Sketched API calls between client/server.',
+    description:
+      'Engineered a rideshare platform using Django and PostgreSQL incorporating geolocation APIs using NodeJS. Sketched the API calls between client/server using Flask.',
     tech: ['Django', 'PostgreSQL', 'Node.js', 'Flask'],
+    tags: ['Geolocation APIs', 'client-server architecture'],
   },
 ]

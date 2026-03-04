@@ -1,47 +1,67 @@
 .timeline {
   position: relative;
-  padding-left: 1.5rem;
-  margin-top: 1rem;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.5rem;
-  bottom: 0.5rem;
-  width: 2px;
-  background: linear-gradient(to bottom, var(--accent), transparent);
-  border-radius: 2px;
-  opacity: 0.5;
+  margin-top: 1.5rem;
 }
 
 .job {
-  position: relative;
-  margin-bottom: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0;
 }
 
 .job:last-child {
   margin-bottom: 0;
 }
 
+.lineWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 20px;
+}
+
 .badge {
-  position: absolute;
-  left: -1.5rem;
-  top: 0.4rem;
-  transform: translateX(-50%);
-  width: 10px;
-  height: 10px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent-dim);
+  background: var(--accent-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1.5rem;
+}
+
+.badgeInner {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-gradient);
+}
+
+.line {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(to bottom, var(--accent), rgba(129, 140, 248, 0.2), transparent);
+  border-radius: 2px;
+  margin: 4px 0;
+  min-height: 2rem;
 }
 
 .content {
+  flex: 1;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 0.75rem;
-  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.25rem;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.content:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-glow);
 }
 
 .header {
@@ -62,26 +82,35 @@
 
 .company {
   font-size: 0.9rem;
-  color: var(--accent);
-  font-weight: 500;
+  font-weight: 600;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .meta {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 0.2rem;
+  gap: 0.25rem;
 }
 
 .location {
-  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
 }
 
 .period {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text-muted);
   font-family: var(--font-mono);
+  padding: 0.15rem 0.5rem;
+  background: var(--accent-dim);
+  border-radius: 0.25rem;
 }
 
 .points {
@@ -90,19 +119,19 @@
 
 .points li {
   position: relative;
-  padding-left: 1rem;
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  padding-left: 1.25rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .points li::before {
-  content: '›';
+  content: '▹';
   position: absolute;
   left: 0;
   color: var(--accent);
-  font-weight: 700;
+  font-size: 0.9rem;
 }
 
 .points li:last-child {
@@ -117,5 +146,17 @@
 
   .meta {
     align-items: flex-start;
+  }
+
+  .lineWrap {
+    display: none;
+  }
+
+  .job {
+    gap: 0;
+  }
+
+  .content {
+    border-left: 3px solid var(--accent);
   }
 }

@@ -1,7 +1,7 @@
 .grid {
   display: grid;
-  gap: 1.5rem;
-  margin-top: 1rem;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 @media (min-width: 640px) {
@@ -19,17 +19,37 @@
 .group {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 0.75rem;
-  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.group:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-2px);
+}
+
+.groupHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.groupIcon {
+  font-size: 1.25rem;
 }
 
 .label {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  color: var(--accent);
-  margin-bottom: 0.75rem;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
 .tags {
@@ -39,16 +59,20 @@
 }
 
 .tag {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-family: var(--font-mono);
-  padding: 0.25rem 0.5rem;
+  padding: 0.3rem 0.6rem;
   background: var(--bg-elevated);
   color: var(--text-muted);
   border-radius: 0.25rem;
   border: 1px solid var(--border);
+  transition: border-color var(--transition), color var(--transition), background var(--transition), transform var(--transition);
+  cursor: default;
 }
 
 .tag:hover {
-  border-color: rgba(6, 182, 212, 0.3);
-  color: var(--text);
+  border-color: var(--border-hover);
+  color: var(--accent);
+  background: var(--accent-dim);
+  transform: translateY(-1px);
 }

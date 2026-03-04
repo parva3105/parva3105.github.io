@@ -5,14 +5,16 @@
   right: 0;
   z-index: 100;
   padding: 1rem 1.5rem;
-  transition: background 0.3s, box-shadow 0.3s;
+  transition: background 0.4s, box-shadow 0.4s, border-color 0.4s;
+  border-bottom: 1px solid transparent;
 }
 
 .nav.scrolled {
-  background: rgba(10, 11, 15, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 1px 0 var(--border);
+  background: rgba(10, 10, 15, 0.88);
+  backdrop-filter: blur(16px) saturate(1.5);
+  -webkit-backdrop-filter: blur(16px) saturate(1.5);
+  border-bottom-color: var(--border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
 }
 
 .wrap {
@@ -24,13 +26,35 @@
 }
 
 .logo {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: var(--text);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  transition: color var(--transition);
 }
 
-.logoAccent { color: var(--accent); }
+.logo:hover {
+  color: var(--accent);
+}
+
+.logoAccent {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logoDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-left: 2px;
+  margin-bottom: -6px;
+}
 
 .desktop {
   display: none;
@@ -43,20 +67,41 @@
     gap: 0.25rem;
   }
 
-  .burger { display: none; }
+  .burger {
+    display: none;
+  }
 }
 
 .link {
+  position: relative;
   padding: 0.5rem 0.75rem;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: var(--text-muted);
   border-radius: 0.375rem;
+  transition: color var(--transition), background var(--transition);
 }
 
 .link:hover {
   color: var(--text);
   background: var(--surface);
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 16px;
+  height: 2px;
+  background: var(--accent-gradient);
+  border-radius: 1px;
+  transition: transform var(--transition);
+}
+
+.link:hover::after {
+  transform: translateX(-50%) scaleX(1);
 }
 
 .burger {
@@ -111,7 +156,9 @@
 }
 
 @media (min-width: 768px) {
-  .mobile { display: none !important; }
+  .mobile {
+    display: none !important;
+  }
 }
 
 .mobileLink {
@@ -120,6 +167,7 @@
   font-size: 0.95rem;
   color: var(--text-muted);
   border-radius: 0.375rem;
+  transition: color var(--transition), background var(--transition);
 }
 
 .mobileLink:hover {

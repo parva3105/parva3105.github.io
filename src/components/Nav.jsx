@@ -32,6 +32,7 @@ export default function Nav() {
       <div className={styles.wrap}>
         <a href="#home" className={styles.logo}>
           P<span className={styles.logoAccent}>S</span>
+          <span className={styles.logoDot} />
         </a>
 
         <nav className={styles.desktop}>
